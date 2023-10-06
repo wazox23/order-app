@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/order-app/static/css/main.db3adeae.css",
+    "main.js": "/order-app/static/js/main.1f567930.js",
+    "index.html": "/order-app/index.html",
+    "main.db3adeae.css.map": "/order-app/static/css/main.db3adeae.css.map",
+    "main.1f567930.js.map": "/order-app/static/js/main.1f567930.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db3adeae.css",
+    "static/js/main.1f567930.js"
+  ]
+}
