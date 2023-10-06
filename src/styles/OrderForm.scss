@@ -1,0 +1,60 @@
+$switch-bg-color: #ccc;
+$switch-active-bg-color: #4caf50;
+$switch-handle-color: #fff;
+$switch-width: 50px;
+$switch-height: 30px;
+$handle-size: 28px;
+$transition-time: 0.3s;
+
+.toggle-switch {
+  position: relative;
+  width: $switch-width;
+  display: inline-block;
+  vertical-align: middle;
+
+  .toggle-switch-checkbox {
+    display: none;
+
+    &:checked + .toggle-switch-label {
+      .toggle-switch-inner {
+        background-color: $switch-active-bg-color;
+      }
+
+      .toggle-switch-switch {
+        left: $switch-width - $handle-size - 1px;
+      }
+    }
+  }
+
+  .toggle-switch-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $switch-width;
+    height: $switch-height;
+    cursor: pointer;
+    background-color: $switch-bg-color;
+    border-radius: $switch-height;
+
+    .toggle-switch-inner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: background-color $transition-time;
+      border-radius: $switch-height;
+    }
+
+    .toggle-switch-switch {
+      width: $handle-size;
+      height: $handle-size;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      background-color: $switch-handle-color;
+      transition: left $transition-time;
+      border-radius: 50%;
+    }
+  }
+}
